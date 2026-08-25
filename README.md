@@ -4,7 +4,7 @@ A modern **Smart Cafe Management System** built using the **MERN Stack (MongoDB,
 
 ## 🚀 Features
 
-* 👤 User registration and login
+* 👤 Staff registration and login
 * 🔐 Secure authentication
 * 🍔 Menu management
 * 🛒 Add items to cart
@@ -55,8 +55,9 @@ Smart-Cafe-Management/
 │   └── src/
 │       ├── components/
 │       ├── pages/
-│       ├── services/
+│       ├── utils/
 │       ├── assets/
+|       ├── context/
 │       └── App.jsx
 │
 ├── server/
