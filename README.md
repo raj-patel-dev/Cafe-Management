@@ -1,66 +1,61 @@
 # ☕ Smart Cafe Management System
 
-A modern **Smart Cafe Management System** built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**. The system helps cafes efficiently manage customers, menu items, orders, billing, and day-to-day cafe operations through an easy-to-use web interface.
+A full-stack **Smart Cafe Management System** built with the **MERN stack** to simplify cafe operations such as staff authentication, menu management, cart handling, order processing, billing, and administration.
 
-## 🚀 Features
+## ✨ Features
 
-* 👤 Staff registration and login
-* 🔐 Secure authentication
-* 🍔 Menu management
-* 🛒 Add items to cart
-* 📦 Place and manage orders
-* 🧾 Order and billing management
-* 📊 Admin dashboard
-* 👨‍💼 Admin management of menu and orders
-* 🔍 Search and filter menu items
-* 📱 Responsive user interface
-* 💾 MongoDB database integration
-* ⚡ RESTful API architecture
+- Staff registration and login
+- Secure authentication
+- Menu management
+- Search and filter menu items
+- Add food and beverages to cart
+- Place and manage orders
+- Order and billing management
+- Admin dashboard
+- Admin menu and order managem  ent
+- Responsive user interface
+- RESTful API architecture
+- MongoDB database integration
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
-* React.js
-* JavaScript
-* HTML5
-* CSS3
-* Bootstrap
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Bootstrap
 
 ### Backend
-
-* Node.js
-* Express.js
-* REST API
+- Node.js
+- Express.js
+- REST APIs
 
 ### Database
-
-* MongoDB
-* Mongoose
+- MongoDB
+- Mongoose
 
 ### Tools
+- Git & GitHub
+- VS Code
+- Postman
+- npm
 
-* Git & GitHub
-* VS Code
-* Postman
-* npm
-
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```text
-Smart-Cafe-Management/
-│
-├── client/
+Cafe-Management/
+├── Frontend/
 │   ├── public/
 │   └── src/
 │       ├── components/
 │       ├── pages/
 │       ├── utils/
 │       ├── assets/
-|       ├── context/
+│       ├── context/
 │       └── App.jsx
 │
-├── server/
+├── Server/
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
@@ -68,42 +63,33 @@ Smart-Cafe-Management/
 │   ├── config/
 │   └── server.js
 │
-├── .gitignore
-├── package.json
 └── README.md
 ```
 
 ## ⚙️ Installation
 
-### 1. Clone the repository
-
 ```bash
-git clone https://github.com/your-username/smart-cafe-management.git
+git clone https://github.com/raj-patel-dev/Cafe-Management.git
+cd Cafe-Management
 ```
 
-### 2. Navigate to the project
+Install frontend dependencies:
 
 ```bash
-cd smart-cafe-management
-```
-
-### 3. Install frontend dependencies
-
-```bash
-cd client
+cd Frontend
 npm install
 ```
 
-### 4. Install backend dependencies
+Install backend dependencies:
 
 ```bash
-cd ../server
+cd ../Server
 npm install
 ```
 
-## 🔑 Environment Variables
+## 🔐 Environment Variables
 
-Create a `.env` file inside the `server` directory:
+Create the required `.env` file in the backend directory:
 
 ```env
 PORT=5000
@@ -111,27 +97,25 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
-Replace the values with your own MongoDB connection string and secret key.
+Never commit real credentials or API keys to GitHub.
 
-## ▶️ Running the Application
+## ▶️ Run Locally
 
-### Start the Backend
+Start the backend:
 
 ```bash
-cd server
+cd Server
 npm run dev
 ```
 
-### Start the Frontend
-
-Open another terminal:
+Start the frontend in another terminal:
 
 ```bash
-cd client
+cd Frontend
 npm run dev
 ```
 
-The application will normally be available at:
+Typical local URLs:
 
 ```text
 Frontend: http://localhost:5173
@@ -140,21 +124,16 @@ Backend:  http://localhost:5000
 
 ## 👨‍💼 Admin Module
 
-The admin panel allows cafe administrators to:
+Administrators can:
 
-* Add new menu items
-* Update menu items
-* Delete menu items
-* View customer orders
-* Update order status
-* Manage cafe operations
-* Monitor overall orders
+- Add menu items
+- Update menu items
+- Delete menu items
+- View customer orders
+- Update order status
+- Manage cafe operations
 
-## 👨‍🍳 Order Management
-
-Customers can browse the available menu, select food and beverages, add them to their cart, and place orders.
-
-The system provides order tracking through different statuses such as:
+## 📦 Order Flow
 
 ```text
 Pending → Confirmed → Preparing → Ready → Completed
@@ -162,101 +141,40 @@ Pending → Confirmed → Preparing → Ready → Completed
 
 ## 🗄️ Database
 
-The application uses **MongoDB** for storing application data.
+MongoDB is used for application data storage, with Mongoose providing schema definitions and database interaction.
 
-Main collections may include:
+Typical data entities include:
 
-* Users
-* Menu Items
-* Orders
-* Categories
-* Payments
+- Users
+- Menu Items
+- Orders
+- Categories
+- Payments
 
-Mongoose is used to define schemas and communicate with MongoDB.
+## 🔒 Security
 
-## 🔐 Security
+- Password hashing
+- JWT-based authentication
+- Protected API routes
+- Environment variables for sensitive configuration
+- Server-side validation
 
-The system implements basic security practices including:
+## 🚀 Future Improvements
 
-* Password hashing
-* JWT-based authentication
-* Protected API routes
-* Environment variables for sensitive configuration
-* Server-side validation
-
-## 📸 Screenshots
-
-Add screenshots of your project here:
-
-```text
-screenshots/
-├── home.png
-├── menu.png
-├── cart.png
-├── login.png
-├── orders.png
-└── admin-dashboard.png
-```
-
-Example:
-
-```markdown
-![Home Page](screenshots/home.png)
-![Admin Dashboard](screenshots/admin-dashboard.png)
-```
-
-## 🎯 Project Objective
-
-The main objective of the **Smart Cafe Management System** is to digitize and simplify cafe operations. It reduces manual work involved in managing menus, customer orders, and billing while providing administrators with a centralized platform to manage cafe activities.
-
-## 🔮 Future Enhancements
-
-* Online payment integration
-* Table reservation system
-* Real-time order notifications
-* Sales and revenue analytics
-* Customer reviews and ratings
-* Inventory management
-* Email/SMS notifications
-* QR-based table ordering
-* Advanced admin analytics
-
-## 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork the repository
-2. Create a new branch
-
-```bash
-git checkout -b feature/new-feature
-```
-
-3. Make your changes
-4. Commit your changes
-
-```bash
-git commit -m "Add new feature"
-```
-
-5. Push the branch
-
-```bash
-git push origin feature/new-feature
-```
-
-6. Open a Pull Request
-
-## 📄 License
-
-This project is developed for educational and portfolio purposes.
+- Online payment integration
+- Table reservation
+- Real-time order notifications
+- Sales and revenue analytics
+- Customer reviews and ratings
+- Inventory management
+- Email/SMS notifications
+- QR-based table ordering
+- Advanced admin analytics
 
 ## 👨‍💻 Developer
 
 **Raj Patel**
 
-MERN Stack Developer | Full-Stack Developer
+Full-Stack / MERN Developer
 
----
-
-⭐ If you find this project useful, consider giving the repository a star!
+[GitHub](https://github.com/raj-patel-dev)
